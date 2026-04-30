@@ -5,6 +5,7 @@ class Login {
         this.passwordTF = page.locator('[id="password"]');
         this.submitBTN = page.locator('[id="login-button"]');
         this.successMSG = page.locator('.app_logo');
+        this.errorMSG = page.locator('[data-test="error"]');
     }
 
     async launchURL(url) {

@@ -19,5 +19,9 @@ When("Click on submit button", async({}) => {
     await loginPage.clickSubmit()
 })
 Then("Login should be successful {string}", async({}, message) => {
-    await expect(loginPage.successMSG).toContainText(message)
+    if (message === "Swag Labs") {
+        await expect(loginPage.successMSG).toContainText(message);
+    } else {
+        await expect(loginPage.errorMSG).toContainText(message);
+    }
 })
