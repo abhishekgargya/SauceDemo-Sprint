@@ -1,6 +1,5 @@
 Feature: Login
 
-
 Scenario: Login with valid credentials
 Given navigate to "https://www.saucedemo.com/"
 
