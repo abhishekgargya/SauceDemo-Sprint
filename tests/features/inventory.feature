@@ -1,4 +1,6 @@
 Feature: Inventory
+
+    @inventory
     Scenario Outline: Inventory page interactions
         Given User is logged in as "<username>" with password "<password>"
         When  <action>
