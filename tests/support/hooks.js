@@ -1,5 +1,6 @@
-const { BeforeAll, AfterAll, Before, After } = require('@cucumber/cucumber');
-const { chromium } = require('@playwright/test');
+
+const { BeforeAll, AfterAll, Before, After } = require("@cucumber/cucumber");
+const { chromium } = require("@playwright/test");
 
 let browser;
 
@@ -22,4 +23,6 @@ AfterAll(async () => {
   if (browser) {
     await browser.close();
   }
+
+
 });
