@@ -1,25 +1,22 @@
-const {createBdd} = require('playwright-bdd')
-const {test} = require('../fixtures')
-const {Given, When, Then} = createBdd(test)
 const {CartPage} = require('../pages/validateCartpage')
 const {Login} = require('../pages/loginpage')
 const {expect} = require('@playwright/test')
+const {Given, When, Then} = require('@cucumber/cucumber')
 
-let cartPage, loginPage
-Given("I am logged in as {string} with password {string}", async({page}, username, password) => {
-  loginPage = new Login(page)
-  await loginPage.launchURL('https://www.saucedemo.com/')
-  await loginPage.enterUsername(username)
-  await loginPage.enterPassword(password)
-  await loginPage.clickSubmit()
+Given('I am logged in as {string} with password {string}', async function (username, password) {
+  this.loginPage = new Login(this.page)
+  await this.loginPage.launchURL('https://www.saucedemo.com/')
+  await this.loginPage.enterUsername(username)
+  await this.loginPage.enterPassword(password)
+  await this.loginPage.clickSubmit()
 })
 
-When("I add {string} to the cart", async({}, product) => {
-  cartPage = new CartPage(loginPage.page)
-  await cartPage.addProduct(product)
+When('I add {string} to the cart', async function (product) {
+  this.cartPage = this.cartPage || new CartPage(this.page)
+  await this.cartPage.addProduct(product)
 })
-Then("the cart badge should show {string}", async({}, count) => {
-  const cartCount = await cartPage.getCartCount()
+Then('the cart badge should show {string}', async function (count) {
+  const cartCount = await this.cartPage.getCartCount()
   expect(cartCount).toBe(count)
 })
 
