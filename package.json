@@ -8,7 +8,11 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "scripts": {
+    "cucumber": "cucumber-js"
+  },
   "devDependencies": {
+    "@cucumber/cucumber": "^12.8.2",
     "@playwright/test": "^1.59.1",
     "@types/node": "^25.6.0",
     "playwright-bdd": "^8.5.0"

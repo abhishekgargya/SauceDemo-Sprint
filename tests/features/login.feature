@@ -1,6 +1,6 @@
 Feature: Login
 
-
+@Login
 Scenario Outline: Login with different users
 Given navigate to "https://www.saucedemo.com/"
 

@@ -1,5 +1,6 @@
 Feature: Logout
 
+@Logout
 Scenario: Logout from application
     Given navigate to "https://www.saucedemo.com/"
     When Enter username as "standard_user"

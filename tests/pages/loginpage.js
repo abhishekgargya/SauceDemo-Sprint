@@ -21,6 +21,10 @@ class Login {
 
     async clickSubmit() {
         await this.submitBTN.click();
+        await this.page.waitForSelector('.app_logo, [data-test="error"]', {
+            state: 'visible',
+            timeout: 30000,
+        });
     }
 }
 
