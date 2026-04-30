@@ -21,6 +21,7 @@ class Login {
     async clickSubmit() {
         await this.submitBTN.click();
     }
+
 }
 
 module.exports={Login}
