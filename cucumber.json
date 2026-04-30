@@ -1,11 +1,11 @@
 {
   "default": {
     "paths": [
-      "tests/features/*.feature"
+      "tests/features/**/*.feature"
     ],
     "require": [
       "tests/support/hooks.js",
-      "tests/steps/*.js"
+      "tests/steps/**/*.js"
     ],
     "format": [
       "progress-bar",
