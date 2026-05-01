@@ -1,11 +1,22 @@
-# Feature: Login
+Feature: Login
 
+@Login
+Scenario Outline: Login with different users
+Given navigate to "https://www.saucedemo.com/"
 
-# Scenario: Login with valid credentials
-# Given navigate to "https://www.saucedemo.com/"
+When Enter username as "<username>"
+And Enter password as "<password>"
+And Click on submit button
 
-# When Enter username as "standard_user"
-# And Enter password as "secret_sauce"
-# And Click on submit button
+Then Login should be successful "<result>"
 
-# Then Login should be successful "Swag Labs"
+Examples:
+    | username                | password         | result                                                                    |
+    | standard_user           | secret_sauce     | Swag Labs                                                                 |
+    | locked_out_user         | secret_sauce     | Epic sadface: Sorry, this user has been locked out.                                                                |
+    | performance_glitch_user | secret_sauce     | Swag Labs                                                                 |
+    | error_user              | secret_sauce     | Swag Labs                                                                 |
+    | visual_user             | secret_sauce     | Swag Labs                                                                 | 
+    | invalid_user            | secret_sauce     | Epic sadface: Username and password do not match any user in this service |
+
+   
