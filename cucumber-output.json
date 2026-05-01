@@ -1,0 +1,730 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;login-with-different-users",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Login with different users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 292380499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "navigate to \"https://www.saucedemo.com/\"",
+            "match": {
+              "location": "tests\\steps\\login.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 663844400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Enter username as \"standard_user\"",
+            "match": {
+              "location": "tests\\steps\\login.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70087500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Enter password as \"secret_sauce\"",
+            "match": {
+              "location": "tests\\steps\\login.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36616399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Click on submit button",
+            "match": {
+              "location": "tests\\steps\\login.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 114234800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Login should be successful \"Swag Labs\"",
+            "match": {
+              "location": "tests\\steps\\login.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27549099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35166900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-different-users",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Login with different users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 271228900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "navigate to \"https://www.saucedemo.com/\"",
+            "match": {
+              "location": "tests\\steps\\login.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 763970899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Enter username as \"locked_out_user\"",
+            "match": {
+              "location": "tests\\steps\\login.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57360200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Enter password as \"secret_sauce\"",
+            "match": {
+              "location": "tests\\steps\\login.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24649300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Click on submit button",
+            "match": {
+              "location": "tests\\steps\\login.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80700200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Login should be successful \"Epic sadface: Sorry, this user has been locked out.\"",
+            "match": {
+              "location": "tests\\steps\\login.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12386500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16377099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-different-users",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "Login with different users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 223866600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "navigate to \"https://www.saucedemo.com/\"",
+            "match": {
+              "location": "tests\\steps\\login.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 682645499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Enter username as \"performance_glitch_user\"",
+            "match": {
+              "location": "tests\\steps\\login.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69639899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Enter password as \"secret_sauce\"",
+            "match": {
+              "location": "tests\\steps\\login.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29622299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Click on submit button",
+            "match": {
+              "location": "tests\\steps\\login.js:49"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5015482399,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Hp\\Desktop\\SauceDemo-Sprint\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:588:17)\n    at process.processTimers (node:internal/timers:523:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Login should be successful \"Swag Labs\"",
+            "match": {
+              "location": "tests\\steps\\login.js:53"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 111013100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-different-users",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "Login with different users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 211642699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "navigate to \"https://www.saucedemo.com/\"",
+            "match": {
+              "location": "tests\\steps\\login.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 651212499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Enter username as \"error_user\"",
+            "match": {
+              "location": "tests\\steps\\login.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84059999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Enter password as \"secret_sauce\"",
+            "match": {
+              "location": "tests\\steps\\login.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33165699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Click on submit button",
+            "match": {
+              "location": "tests\\steps\\login.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134144500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Login should be successful \"Swag Labs\"",
+            "match": {
+              "location": "tests\\steps\\login.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8219900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 19292499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-different-users",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "Login with different users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 195142799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "navigate to \"https://www.saucedemo.com/\"",
+            "match": {
+              "location": "tests\\steps\\login.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 617513499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Enter username as \"visual_user\"",
+            "match": {
+              "location": "tests\\steps\\login.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 86398199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Enter password as \"secret_sauce\"",
+            "match": {
+              "location": "tests\\steps\\login.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19320299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Click on submit button",
+            "match": {
+              "location": "tests\\steps\\login.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 114243600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Login should be successful \"Swag Labs\"",
+            "match": {
+              "location": "tests\\steps\\login.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7121900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 33718799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-with-different-users",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Login with different users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 212968399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "navigate to \"https://www.saucedemo.com/\"",
+            "match": {
+              "location": "tests\\steps\\login.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 614244000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Enter username as \"invalid_user\"",
+            "match": {
+              "location": "tests\\steps\\login.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63313600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Enter password as \"secret_sauce\"",
+            "match": {
+              "location": "tests\\steps\\login.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22415300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Click on submit button",
+            "match": {
+              "location": "tests\\steps\\login.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60314000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Login should be successful \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "location": "tests\\steps\\login.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11966300
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 16006400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "tests\\features\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "logout;logout-from-application",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Logout from application",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 224418300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "navigate to \"https://www.saucedemo.com/\"",
+            "match": {
+              "location": "tests\\steps\\login.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 620734199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Enter username as \"standard_user\"",
+            "match": {
+              "location": "tests\\steps\\login.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53028599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "Enter password as \"secret_sauce\"",
+            "match": {
+              "location": "tests\\steps\\login.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24832400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "Click on submit button",
+            "match": {
+              "location": "tests\\steps\\login.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 102674800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Click on menu button",
+            "match": {
+              "location": "tests\\steps\\logout.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75588999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "Click on logout button",
+            "match": {
+              "location": "tests\\steps\\logout.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 995406500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "User should be logged out \"Swag Labs\"",
+            "match": {
+              "location": "tests\\steps\\logout.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9642200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 31647900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Logout",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "logout",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Logout",
+    "tags": [],
+    "uri": "tests\\features\\logout.feature"
+  }
+]

@@ -5,6 +5,7 @@ class Login {
         this.passwordTF = page.locator('[id="password"]');
         this.submitBTN = page.locator('[id="login-button"]');
         this.successMSG = page.locator('.app_logo');
+        this.errorMSG = page.locator('[data-test="error"]');
     }
 
     async launchURL(url) {
@@ -20,6 +21,10 @@ class Login {
 
     async clickSubmit() {
         await this.submitBTN.click();
+        await this.page.waitForSelector('.app_logo, [data-test="error"]', {
+            state: 'visible',
+            timeout: 30000,
+        });
     }
 
 }
