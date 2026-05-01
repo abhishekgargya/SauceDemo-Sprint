@@ -26,6 +26,7 @@ class Login {
             timeout: 30000,
         });
     }
+
 }
 
 module.exports={Login}

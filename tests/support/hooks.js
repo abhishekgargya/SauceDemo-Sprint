@@ -1,7 +1,6 @@
-const { BeforeAll, AfterAll, Before, After, setDefaultTimeout } = require('@cucumber/cucumber');
-const { chromium } = require('@playwright/test');
 
-setDefaultTimeout(60 * 1000);
+const { BeforeAll, AfterAll, Before, After } = require("@cucumber/cucumber");
+const { chromium } = require("@playwright/test");
 
 let browser;
 
@@ -24,4 +23,6 @@ AfterAll(async () => {
   if (browser) {
     await browser.close();
   }
+
+
 });
