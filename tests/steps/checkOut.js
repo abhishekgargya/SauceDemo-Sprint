@@ -4,20 +4,6 @@ const { expect } = require('@playwright/test');
 
 let checkoutPage;
 
-Given('I am logged in as {string} with password {string}', async function (username, password) {
-  const page = this.page;
-  await page.goto('https://www.saucedemo.com/');
-  await page.locator('#user-name').fill(username);
-  await page.locator('#password').fill(password);
-  await page.locator('#login-button').click();
-});
-
-Given('I add {string} to the cart', async function (product) {
-  const page = this.page;
-  await page.locator(`text=${product}`).click();
-  await page.locator('button:has-text("Add to cart")').click();
-});
-
 Given('I click the cart icon', async function () {
   const page = this.page;
   await page.locator('.shopping_cart_link').click();

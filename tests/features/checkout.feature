@@ -1,7 +1,10 @@
 Feature: Checkout
 
   Background:
-    Given I am logged in as "standard_user" with password "secret_sauce"
+    Given navigate to "https://www.saucedemo.com/"
+    When Enter username as "standard_user"
+    And Enter password as "secret_sauce"
+    And Click on submit button
     And I add "Sauce Labs Backpack" to the cart
     And I click the cart icon
 
