@@ -29,8 +29,8 @@ Feature: End to End Shopping Journey
     Then the cart badge should show "<count>"
 
     Examples:
-      | product1               | product2              | product3                | count |
-      | Sauce Labs Backpack    |                       |                         | 1     |
+      | product1               | product2               | product3                | count |
+      | Sauce Labs Backpack    |                        |                         | 1     |
       | Sauce Labs Backpack    | Sauce Labs Bike Light  |                         | 2     |
       | Sauce Labs Backpack    | Sauce Labs Bike Light  | Sauce Labs Bolt T-Shirt | 3     |
 
